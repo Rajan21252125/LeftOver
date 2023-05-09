@@ -1,0 +1,29 @@
+.footer{
+    background-color: #0f0f0f;
+    color: #fff;
+    padding-block: 3em;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 2em;
+    .footer-section{
+        p{
+            opacity: 0.8;
+            margin-bottom: .5em;
+        }
+        .footer-title{
+            opacity: 1;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        .footer-link{
+            display: block;
+            color: #fff;
+            margin-bottom: .5em;
+            font-size: 1.2em;
+            &:hover{
+                color: var(--primary-color);
+            }
+        }
+    }
+}

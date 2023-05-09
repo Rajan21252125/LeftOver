@@ -1,0 +1,57 @@
+.section.cheif{
+    display: block;
+}
+.top-cheif-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 1.5em;
+    margin-top: 3em;
+}
+.cheif-card{
+    display: flex;
+    height: 120px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    overflow: hidden;
+    img{
+        height: 100%;
+        width: 120px;
+        border-radius: 5px;
+        box-shadow: 0 3px 6px var(--shadow-color);
+    }
+    .cheif-card-info{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: .5em;
+        padding-left: 1em;
+        padding-top: .5em;
+        .cheif-card-name{
+            color: var(--text-color);
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .cheif-recipe-count,.cheif-recipe-cuisine{
+            color: var(--text-light);
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+        .cheif-icons{
+            font-size: 1.2em;
+            svg{
+                cursor:pointer;
+                margin-right: .5em;
+                &:nth-child(1){
+                    color: #3b5998;
+                }
+                &:nth-child(2){
+                    color: #55acee;
+                }
+                &:nth-child(3){
+                    color: #dd4b39;
+                }
+            }
+        }
+    }
+}
